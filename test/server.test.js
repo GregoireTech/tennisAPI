@@ -3,7 +3,7 @@ const request = require('supertest');
 describe('loading express and testing both routes', function () {
   let server;
   beforeEach(function () {
-    server = require('../server');
+    server = require('../index');
   });
   afterEach(function () {
     server.close();

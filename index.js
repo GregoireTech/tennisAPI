@@ -9,7 +9,7 @@ let API_URL;
 if(process.env.node_env === 'production'){
     API_URL = process.env.API_URL
 } else {
-    API_URL = require('./keys').API_URL;
+    API_URL = require('./config/keys').API_URL;
 }
 
 // Start Express instance
@@ -24,7 +24,7 @@ const app = express();
  */
 const getPlayersList = async () => {
     // FOR TASKS 1 & 2
-    // const jsonFile = fs.readFileSync('./headtohead.json');
+    // const jsonFile = fs.readFileSync('./data/headtohead.json');
     // const jsonObject = JSON.parse(jsonFile);
     // const playersList = jsonObject.players;
 

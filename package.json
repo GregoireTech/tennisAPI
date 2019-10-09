@@ -6,11 +6,11 @@
     "type": "git",
     "url": "https://github.com/GregoireTech/tennisAPI.git"
 },
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "Grégoire Claise",
   "license": "ISC",
