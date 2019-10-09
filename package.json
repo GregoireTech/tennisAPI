@@ -2,16 +2,24 @@
   "name": "tennis",
   "version": "1.0.0",
   "description": "Simple REST api to retrieve info about tennis players",
-  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GregoireTech/tennisAPI.git"
+},
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "test": "mocha",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "author": "Grégoire Claise",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.0",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.1",
+    "supertest": "^4.0.2"
   }
 }

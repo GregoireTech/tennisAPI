@@ -88,7 +88,10 @@ app.get('/players', async (req, res) => {
     res.send(body);
 });
 
-
 // Set up the port and start the server.
 const port  = process.env.PORT || DEV_PORT;
-app.listen(port, () => console.log('listening on port: ' + port));
+module.exports = app.listen(port, () => console.log('listening on port: ' + port));
+
+// SETUP THE EXPORTS FOR TESTING
+// module.exports.getPlayerInfo = getPlayerInfo;
+// module.exports.getPlayersList = getPlayersList;
