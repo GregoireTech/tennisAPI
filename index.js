@@ -3,14 +3,7 @@ const axios = require('axios');
 // FOR TASK 1
 //const fs = require('fs');
 const DEV_PORT = 3000;
-let API_URL;
-
-// HIDE THE API ENDPOINT TO KEEP THE CLIENT'S NAME SECRET
-if(process.env.node_env === 'production'){
-    API_URL = process.env.API_URL
-} else {
-    API_URL = require('./config/keys').API_URL;
-}
+const API_URL = 'https://eurosportdigital.github.io/eurosport-node-developer-recruitment/headtohead.json';
 
 // Start Express instance
 const app = express();
